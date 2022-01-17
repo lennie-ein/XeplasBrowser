@@ -1,9 +1,7 @@
-import 'dart:collection';
 import 'dart:typed_data';
 import 'package:collection/collection.dart';
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 class WebViewModel extends ChangeNotifier {

@@ -53,7 +53,7 @@ class _BrowserState extends State<Browser> with SingleTickerProviderStateMixin {
   }
 
   restore() async {
-    var browserModel = Provider.of<BrowserModel>(context, listen: true);
+    var browserModel = Provider.of<BrowserModel>(context, listen: false);
     browserModel.restore();
   }
 
@@ -62,7 +62,7 @@ class _BrowserState extends State<Browser> with SingleTickerProviderStateMixin {
     super.didChangeDependencies();
     if (!_isRestored) {
       _isRestored = true;
-      restore();
+      // restore();
     }
     precacheImage(AssetImage("assets/icon/icon.png"), context);
   }
